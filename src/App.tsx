@@ -12,7 +12,7 @@ export default function App() {
 
   const renderTab = () => {
     switch (activeTab) {
-      case 'sanctuary': return <Sanctuary />;
+      case 'sanctuary': return <Sanctuary onNavigate={setActiveTab} />;
       case 'counselor': return <Counselor />;
       case 'community': return <Community />;
       case 'journey': return <Journey />;
